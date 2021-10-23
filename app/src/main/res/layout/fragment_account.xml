@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:paddingTop="10dp">
+    <!--
+        <RelativeLayout
+            android:id="@+id/authorInfo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="6dp"
+            android:layout_margin="10dp"
+            android:background="@color/articleCard">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/accounticon" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/imageView"
+                android:text="USERNAME"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:textSize="22sp"
+                android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/locationIcon"
+            android:text="LOCATION"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/locationIcon"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/location"
+            android:scaleType="centerInside"
+            android:background="@color/articleCard"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_marginBottom="6dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/username"
+            />
+
+
+        <TextView
+            android:id="@+id/feel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@id/locationIcon"
+            android:layout_alignParentRight="true"
+            android:text="SAY SOMETHING"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+    -->
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/articleCard"
+        android:drawableEnd="@drawable/black_right_arrow"
+        android:drawableRight="@drawable/black_right_arrow"
+        android:fontFamily="sans-serif"
+        android:text="Profile"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/myArticlesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/articleCard"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="My Articles"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"
+        android:drawableEnd="@drawable/black_right_arrow"
+        android:drawableRight="@drawable/black_right_arrow"
+        />
+
+    <Button
+        android:id="@+id/myCommentsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/articleCard"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="My Comments"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"
+        android:drawableEnd="@drawable/black_right_arrow"
+        android:drawableRight="@drawable/black_right_arrow"
+        />
+
+    <!--
+    <Switch
+        android:id="@+id/notificationIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Notification"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@color/articleCard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/locationServiceIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Location"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:background="@color/articleCard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+    -->
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/articleCard"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="About"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="5dp"
+        android:drawableEnd="@drawable/black_right_arrow"
+        android:drawableRight="@drawable/black_right_arrow"
+        android:fontFamily="sans-serif"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#e20f00"
+        android:gravity="center"
+        android:text="LOG OUT"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:id = "@+id/logout"
+        />
+
+
+</LinearLayout>

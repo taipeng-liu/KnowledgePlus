@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/articleCard"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="6dp"
+    android:layout_margin="10dp"
+    android:background="@color/articleCard">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/knowledge" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageView"
+        android:text="TITLE"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/nViews_nComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/imageView"
+        android:text="0 view, 0 comment"
+        android:textColor="@android:color/darker_gray"
+        android:layout_margin="5dp"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/authorIcon"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:src="@drawable/accounticon"
+        android:scaleType="centerInside"
+        android:background="@color/articleCard"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@id/nViews_nComments"
+        />
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/authorIcon"
+        android:layout_below="@id/nViews_nComments"
+        android:text="AUTHOR"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/publishDateIcon"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:src="@drawable/clock"
+        android:scaleType="centerInside"
+        android:background="@color/articleCard"
+        android:layout_toRightOf="@id/author"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@id/nViews_nComments"
+        />
+    <TextView
+        android:id="@+id/publishDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/publishDateIcon"
+        android:layout_below="@id/nViews_nComments"
+        android:layout_alignParentRight="true"
+        android:text="DATE"
+        android:textSize="15dp"/>
+
+
+</RelativeLayout>

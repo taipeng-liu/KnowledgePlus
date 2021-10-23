@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text = "Log In"
+        android:textSize="50dp"
+        android:layout_marginTop="130dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center">
+    </TextView>
+
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/email"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="60dp"
+        android:maxLines="1"
+        android:background="@color/white">
+    </EditText>
+
+    <EditText
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:background="@color/white">
+    </EditText>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text = "Login"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/login"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#0abab5"
+        android:elevation="10dp"
+        android:background="@color/button"
+        android:stateListAnimator="@anim/fragment_close_enter"></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do not have account? Register here"
+        android:id="@+id/registerTextView"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"></TextView>
+</LinearLayout>

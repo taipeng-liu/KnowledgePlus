@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/articleCard"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="6dp"
+    android:layout_margin="10dp"
+    android:background="@color/articleCard">
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Your Comment"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:text="Article Title"
+        android:textColor="@android:color/darker_gray"
+        android:layout_margin="5dp"
+        android:textSize="15sp" />
+
+
+    <ImageButton
+        android:id="@+id/publishDateIcon"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:src="@drawable/clock"
+        android:scaleType="centerInside"
+        android:background="@color/articleCard"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@id/articleTitle"
+        />
+    <TextView
+        android:id="@+id/publishDate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/publishDateIcon"
+        android:layout_below="@id/articleTitle"
+        android:text="DATE"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/deleteIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/delete"
+        android:scaleType="centerInside"
+        android:background="@color/articleCard"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        />
+
+</RelativeLayout>
